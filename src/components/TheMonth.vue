@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="grid grid-cols-7 gap-2 text-center">
-      <div v-for="(day, index) in weekDays" :key="index" class="p-2 bg-gray-200">
+      <div v-for="(day, index) in weekDays" :key="index" class="flex justify-center">
         {{ day }}
       </div>
-      <div v-for="(day, dayIndex) in monthDays" :key="dayIndex" class="p-2">
-        <div v-if="day">
+      <div v-for="(day, dayIndex) in monthDays" :key="dayIndex" class="">
+        <div v-if="day" class="flex justify-center">
           <TheDay :date="new Date(currentYear, currentMonth - 1, day)" />
         </div>
       </div>

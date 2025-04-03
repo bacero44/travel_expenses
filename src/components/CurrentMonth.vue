@@ -1,20 +1,18 @@
 <template>
-  <div class="current-month">
-    <h2 class="block mb-2 text-sm font-medium">Current Month Expenses</h2>
-    <div class="flex">
-      <button
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        @click="changeMonth('left')"
-      >
-        <IconArrow direction="left" />
-      </button>
-      <div>- {{ currentMonthName }} -</div>
-      <button
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        @click="changeMonth('right')"
-      >
-        <IconArrow direction="right" />
-      </button>
+  <div class="current-month w-full">
+    <div class="flex gap-2">
+      <h2 class="flex-1 text-3xl font-bold text-dark-gray">
+        {{ currentMonthName }} {{ currentYear }}
+      </h2>
+      <div class="flex-1 flex justify-end gap-4">
+        <button class="cursor-pointer" @click="changeMonth('left')">
+          <IconArrow direction="left" size="30" color="#595959" />
+        </button>
+
+        <button class="cursor-pointer" @click="changeMonth('right')">
+          <IconArrow direction="right" size="30" color="#595959" />
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -27,6 +25,7 @@ import IconArrow from './icons/IconArrow.vue'
 const store = useExpenseStore()
 
 const currentMonthName = computed(() => store.currentMonthName)
+const currentYear = computed(() => store.currentYear)
 
 const changeMonth = (direction) => {
   if (direction === 'left') {
