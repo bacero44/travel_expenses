@@ -4,23 +4,24 @@ import CurrentMonth from '@/components/CurrentMonth.vue'
 import TheMonth from '@/components/TheMonth.vue'
 import TheFilters from '@/components/TheFilters.vue'
 import TheReport from '@/components/TheReport.vue'
+import TheTotals from '@/components/TheTotals.vue'
 </script>
 
 <template>
-  <main>
-    <div>
-      <h1 class="text-3xl font-bold">Monthly Travel Expenses</h1>
+  <main class="p-4">
+    <div class="mb-8">
+      <h1 class="text-5xl font-bold text-blue-dark">Monthly Travel Expenses</h1>
     </div>
-    <div class="flex gap-5">
-      <CurrentMonth />
-      <TheFilters />
-    </div>
-    <div class="h-screen flex gap-2">
-      <div class="w-4/5">
+
+    <div class="flex gap-2">
+      <div class="bg-white p-6 w-4/6 rounded-xl flex flex-col gap-4">
+        <CurrentMonth />
         <TheMonth />
       </div>
-      <div class="w-1/4">
+      <div class="w-2/6">
+        <TheFilters />
         <TheReport />
+        <TheTotals />
       </div>
     </div>
   </main>

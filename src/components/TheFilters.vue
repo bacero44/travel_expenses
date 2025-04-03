@@ -1,51 +1,54 @@
 <template>
-  <div class="flex">
-    <div>
-      <h2 class="block mb-2 text-sm font-medium">Working days</h2>
-
-      <button
-        v-for="(day, dayIndex) in days"
-        :key="dayIndex"
-        :value="dayIndex"
-        class="px-4 py-2 font-semibold rounded-lg"
-        :class="
-          notWorkingDays.includes(dayIndex) ? 'bg-gray-200 text-gray-700' : 'bg-blue-500 text-white'
-        "
-        @click="setNotWorkingDay(dayIndex)"
-      >
-        {{ day }}
-      </button>
+  <div class="">
+    <div class="bg-white rounded-xl p-4">
+      <h3 class="text-1xl font-bold text-dark-gray">Going days</h3>
+      <div class="flex">
+        <button
+          v-for="(day, dayIndex) in days"
+          :key="dayIndex"
+          :value="dayIndex"
+          class="flex-1 px-4 py-2 font-semibold rounded-lg mr-1"
+          :class="
+            notWorkingDays.includes(dayIndex)
+              ? 'bg-light-gray text-gray-700'
+              : 'bg-blue-dark text-white'
+          "
+          @click="setNotWorkingDay(dayIndex)"
+        >
+          {{ day }}
+        </button>
+      </div>
     </div>
-    <div class="flex">
-      <div>
-        <label for="support-per-kilometer" class="block mb-2 text-sm font-medium"
+    <div class="my-4 flex gap-4">
+      <div class="bg-white rounded-xl p-4">
+        <label for="support-per-kilometer" class="text-1xl font-bold text-dark-gray"
           >Support per kilometer</label
         >
-        <div class="relative mb-6">
+        <div class="relative">
           <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-            <IconEuro color="black" />
+            <b class="text-dark-gray text-xl">€</b>
           </div>
           <input
             type="number"
             id="support-per-kilometer"
-            class="text-sm block w-full ps-10 p-2.5"
+            class="text-1xl block w-full ps-10 p-2 text-right"
             placeholder="0,21"
             v-model="reimbursementPerKm"
           />
         </div>
       </div>
-      <div>
-        <label for="support-per-kilometer" class="block mb-2 text-sm font-medium"
+      <div class="bg-white rounded-xl p-4">
+        <label for="kilometer-per-day" class="text-1xl font-bold text-dark-gray"
           >kilometer per day</label
         >
-        <div class="relative mb-6">
+        <div class="relative">
           <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-            <b>Km</b>
+            <b class="text-dark-gray">Km</b>
           </div>
           <input
             type="number"
-            id="support-per-kilometer"
-            class="text-sm block w-full ps-10 p-2.5"
+            id="kilometer-per-day"
+            class="text-1xl block w-full ps-10 p-2 text-right"
             placeholder="0,21"
             v-model="kmPerDay"
           />
@@ -58,7 +61,6 @@
 <script setup>
 import { computed } from 'vue'
 import { useExpenseStore } from '@/stores/expense'
-import IconEuro from './icons/IconEuro.vue'
 
 const store = useExpenseStore()
 const days = computed(() => store.days)

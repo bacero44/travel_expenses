@@ -1,10 +1,8 @@
 <template>
   <div
     @click="setExeption"
-    :class="[
-      'p-2 cursor-pointer',
-      countDay ? 'bg-gray-100 text-gray-700' : 'bg-red-100 text-gray-500',
-    ]"
+    class="w-40 h-25 rounded-xl text-center flex justify-center items-center cursor-pointer text-xl"
+    :class="countDay ? 'bg-blue-light text-gray-800' : 'bg-light-gray text-gray-400'"
   >
     {{ day }}
   </div>

@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div class="relative shadow-md sm:rounded-lg max-w-full">
+  <div class="bg-white rounded-xl p-4">
+    <h2 class="text-2xl font-bold text-dark-gray">Sumary</h2>
+    <div class="relative shadow-md h-80 overflow-y-auto">
       <table class="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
           <tr>
@@ -18,12 +19,8 @@
             <th scope="row" class="px-3 py-2 font-medium text-gray-900 whitespace-nowrap">
               {{ day }}
             </th>
-            <td class="px-3 py-2">
-              {{ kmPerDay }}
-            </td>
-            <td>
-              {{ reimbursementPerKm * kmPerDay }}
-            </td>
+            <td class="px-3 py-2">{{ kmPerDay }} Km</td>
+            <td>€ {{ reimbursementPerKm * kmPerDay }}</td>
           </tr>
         </tbody>
       </table>
