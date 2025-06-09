@@ -2,6 +2,7 @@
   <div class="">
     <div class="bg-white rounded-xl p-4">
       <h3 class="text-1xl font-bold text-dark-gray">{{ $t('titles.goingDays') }}</h3>
+
       <div class="flex">
         <button
           v-for="(day, dayIndex) in days"
@@ -22,8 +23,7 @@
     <div class="my-4 flex gap-4">
       <div class="bg-white rounded-xl p-4">
         <label for="support-per-kilometer" class="text-1xl font-bold text-dark-gray"
-          >{{ $t('titles.supportPerKm') }}</label
-        >
+          >{{ $t('titles.supportPerKm') }}</label>
         <div class="relative">
           <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
             <b class="text-dark-gray text-xl">€</b>
@@ -38,9 +38,9 @@
         </div>
       </div>
       <div class="bg-white rounded-xl p-4">
-        <label for="kilometer-per-day" class="text-1xl font-bold text-dark-gray"
-          >{{ $t('titles.kmPerDay') }}</label
-        >
+        <label for="kilometer-per-day" class="text-1xl font-bold text-dark-gray">
+          {{ $t('titles.kmPerDay') }}
+        </label>
         <div class="relative">
           <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
             <b class="text-dark-gray">Km</b>

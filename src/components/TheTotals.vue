@@ -9,6 +9,7 @@
       </div>
       <div class="flex-1 bg-blue-dark rounded-xl p-2">
         <h4 class="text-m font-bold text-white">{{ $t('titles.reimbursement') }}:</h4>
+
         <div class="text-right text-2xl font-bold text-white">€ {{ total_reimbursement }}</div>
       </div>
 

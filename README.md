@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Just for fun and vue...
+=======
+# travel-expense
+>>>>>>> 779e4dda31247d2c2986636b908037a96c071268
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -39,5 +43,8 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+<<<<<<< HEAD
 
 > > > > > > > 2f62e54 (Good starting)
+=======
+>>>>>>> 779e4dda31247d2c2986636b908037a96c071268
