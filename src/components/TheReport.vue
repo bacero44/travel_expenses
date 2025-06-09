@@ -1,13 +1,13 @@
 <template>
   <div class="bg-white rounded-xl p-4">
-    <h2 class="text-2xl font-bold text-dark-gray">Sumary</h2>
+    <h3 class="text-1xl font-bold text-dark-gray">{{ $t('titles.summary') }}</h3>
     <div class="relative shadow-md h-80 overflow-y-auto">
       <table class="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
           <tr>
-            <th scope="col" class="px-3 py-3">Date</th>
-            <th scope="col" class="px-3 py-3">Distance</th>
-            <th scope="col" class="px-3 py-3">Total</th>
+            <th scope="col" class="px-3 py-3">{{ $t('titles.date') }}</th>
+            <th scope="col" class="px-3 py-3">{{ $t('titles.distance') }}</th>
+            <th scope="col" class="px-3 py-3">{{ $t('titles.reimbursement') }}</th>
           </tr>
         </thead>
         <tbody>

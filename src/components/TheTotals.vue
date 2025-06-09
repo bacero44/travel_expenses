@@ -1,14 +1,14 @@
 <template>
   <div class="mt-4 bg-white rounded-xl p-4">
-    <h3 class="text-1xl font-bold text-dark-gray">Totals</h3>
+    <h3 class="text-1xl font-bold text-dark-gray">{{ $t('titles.total') }}</h3>
 
     <div class="flex pt-2 gap-4">
       <div class="flex-1 bg-blue-dark rounded-xl p-2">
-        <h4 class="text-m font-bold text-white">Distance:</h4>
+        <h4 class="text-m font-bold text-white">{{ $t('titles.distance') }}:</h4>
         <div class="text-right text-2xl font-bold text-white">{{ total_distance }} Km</div>
       </div>
       <div class="flex-1 bg-blue-dark rounded-xl p-2">
-        <h4 class="text-m font-bold text-white">Reimburs:</h4>
+        <h4 class="text-m font-bold text-white">{{ $t('titles.reimbursement') }}:</h4>
         <div class="text-right text-2xl font-bold text-white">€ {{ total_reimbursement }}</div>
       </div>
 

@@ -13,5 +13,23 @@
     "Noviembre",
     "Diciembre"
   ],
-  "days": ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"]
+  "days": [
+    "Dom",
+    "Lun",
+    "Mar",
+    "Mié",
+    "Jue",
+    "Vie",
+    "Sáb"
+  ],
+  "titles": {
+    "goingDays": "Días de trabajo",
+    "supportPerKm": "Apoyo por kilómetro",
+    "kmPerDay": "Kilómetros por día",
+    "summary": "Resumen",
+    "date": "Fecha",
+    "distance": "Distancia",
+    "total": "Total",
+    "reimbursement": "Reembolso"
+  }
 }

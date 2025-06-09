@@ -7,15 +7,19 @@ import App from './App.vue'
 import router from './router'
 import { createI18n } from 'vue-i18n'
 
-
-import es from './locales/es.json'
+// Import translations
 import en from './locales/en.json'
+import es from './locales/es.json'
+import nl from './locales/nl.json'
 
 const i18n = createI18n({
+  legacy: false,
   locale: 'en',
+  fallbackLocale: 'en',
   messages: {
+    en,
     es,
-    en
+    nl
   }
 })
 

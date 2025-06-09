@@ -5,10 +5,15 @@ import TheMonth from '@/components/TheMonth.vue'
 import TheFilters from '@/components/TheFilters.vue'
 import TheReport from '@/components/TheReport.vue'
 import TheTotals from '@/components/TheTotals.vue'
+import LanguageSelector from '@/components/LanguageSelector.vue'
 </script>
 
 <template>
   <main class="p-4">
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-2xl font-bold text-gray-900">Travel Expense Calculator</h1>
+      <LanguageSelector />
+    </div>
     <div class="mb-8">
       <h1 class="text-5xl font-bold text-blue-dark">Monthly Travel Expenses</h1>
     </div>

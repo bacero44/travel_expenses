@@ -1,0 +1,35 @@
+{
+  "months": [
+    "Januari",
+    "Februari",
+    "Maart",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Augustus",
+    "September",
+    "Oktober",
+    "November",
+    "December"
+  ],
+  "days": [
+    "Zo",
+    "Ma",
+    "Di",
+    "Wo",
+    "Do",
+    "Vr",
+    "Za"
+  ],
+  "titles": {
+    "goingDays": "Werkdagen",
+    "supportPerKm": "Vergoeding per kilometer",
+    "kmPerDay": "Kilometers per dag",
+    "summary": "Samenvatting",
+    "date": "Datum",
+    "distance": "Afstand",
+    "total": "Totaal",
+    "reimbursement": "Vergoeding"
+  }
+} 
