@@ -11,9 +11,13 @@ import LanguageSelector from '@/components/LanguageSelector.vue'
 <template>
   <main class="p-4">
     <div class="flex justify-between items-center mb-8">
-      <h1 class="text-5xl font-bold text-blue-dark">Monthly Travel Expenses</h1>
+      <h1 class="text-5xl font-bold text-blue-dark">
+        Monthly Travel Expenses
+        <small class="text-gray-500 text-sm">Ride & Cry</small>
+      </h1>
+
       <LanguageSelector />
-    </div>   
+    </div>
 
     <div class="flex gap-2">
       <div class="bg-white p-6 w-4/6 rounded-xl flex flex-col gap-4">
