@@ -4,8 +4,10 @@ import { useI18n } from 'vue-i18n'
 
 export const useExpenseStore = defineStore('expense', () => {
   const { t, locale, getLocaleMessage } = useI18n()
-  const currentMonth = ref(1)
-  const currentYear = ref(2025)
+  const now = new Date()
+  const previousMonthDate = new Date(now.getFullYear(), now.getMonth() - 1, 1)
+  const currentMonth = ref(previousMonthDate.getMonth() + 1)
+  const currentYear = ref(previousMonthDate.getFullYear())
 
   const currentMonthName = computed(() => {
     return t(`months[${currentMonth.value - 1}]`)
