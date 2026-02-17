@@ -1,7 +1,7 @@
 <template>
   <div
     @click="setExeption"
-    class="w-40 h-25 rounded-xl text-center flex justify-center items-center cursor-pointer text-xl"
+    class="w-25 h-20 md:w-40 md:h-25 rounded-xl text-center flex justify-center items-center cursor-pointer text-xl"
     :class="countDay ? 'bg-blue-light text-gray-800' : 'bg-light-gray text-gray-400'"
   >
     {{ day }}

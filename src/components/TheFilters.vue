@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="flex flex-col">
     <div class="bg-white rounded-xl p-4">
       <h3 class="text-1xl font-bold text-dark-gray">{{ $t('titles.goingDays') }}</h3>
 
@@ -8,7 +8,7 @@
           v-for="(day, dayIndex) in days"
           :key="dayIndex"
           :value="dayIndex"
-          class="flex-1 px-4 py-2 font-semibold rounded-lg mr-1"
+          class="flex-1 px-2 py-1 md:px-4 md:py-2 font-semibold rounded-lg mr-1"
           :class="
             notWorkingDays.includes(dayIndex)
               ? 'bg-light-gray text-gray-700'
@@ -22,8 +22,9 @@
     </div>
     <div class="my-4 flex gap-4">
       <div class="bg-white rounded-xl p-4">
-        <label for="support-per-kilometer" class="text-1xl font-bold text-dark-gray"
-          >{{ $t('titles.supportPerKm') }}</label>
+        <label for="support-per-kilometer" class="text-1xl font-bold text-dark-gray">{{
+          $t('titles.supportPerKm')
+        }}</label>
         <div class="relative">
           <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
             <b class="text-dark-gray text-xl">€</b>

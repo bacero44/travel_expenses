@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4 bg-white rounded-xl p-4">
+  <div class="fixed bottom-0 left-0 w-full md:static mt-4 bg-white rounded-xl p-4">
     <h3 class="text-1xl font-bold text-dark-gray">{{ $t('titles.total') }}</h3>
 
     <div class="flex pt-2 gap-4">

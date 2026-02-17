@@ -1,7 +1,7 @@
 <template>
   <div class="current-month w-full">
-    <div class="flex gap-2">
-      <h2 class="flex-1 text-3xl font-bold text-dark-gray">
+    <div class="flex gap-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-dark-gray">
         {{ currentMonthName }} {{ currentYear }}
       </h2>
       <div class="flex-1 flex justify-end gap-4">
