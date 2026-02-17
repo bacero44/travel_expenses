@@ -26,6 +26,7 @@ import LanguageSelector from '@/components/LanguageSelector.vue'
       <div class="md:w-2/6">
         <TheFilters />
         <TheReport />
+        <div class="h-35 md:hidden"></div>
         <TheTotals />
       </div>
     </div>
