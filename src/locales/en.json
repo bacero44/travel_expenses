@@ -13,15 +13,7 @@
     "November",
     "December"
   ],
-  "days": [
-    "Sun",
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fri",
-    "Sat"
-  ],
+  "days": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
   "titles": {
     "goingDays": "Going Days",
     "supportPerKm": "Support per kilometer",
@@ -30,6 +22,6 @@
     "date": "Date",
     "distance": "Distance",
     "total": "Total",
-    "reimbursement": "Reimbursement"
+    "reimbursement": "Refund"
   }
 }
